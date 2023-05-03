@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magisch Manifesteren - Stap in de stroom van je leven en ze zal je brengen waar je zijn moet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="rotate.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
+    <script src="rotate"></script>
+    <script src="sparkleClick.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href=""><img src="./images/logo-text.png" alt=""></a>
+            <ul>
+                <li>
+                    Magisch Manifesteren
+                </li>
+                <li>
+                    Blog
+                </li>
+                <li>
+                    Over mij
+                </li>
+                <button class="button margin-left">
+                    <span>Shop</span>
+                    <div class="light"></div>
+                  </button>
+                  <button class="button">
+                    <span>Contact</span>
+                    <div class="light"></div>
+                  </button>
+            </ul>
+        </nav>
+        <h1>Stap in de stroom van je leven <br> en ze zal je brengen waar je zijn moet</h1>
+        <div class="scroll-wrapper">
+            <div class="scroll-container">
+                <div class="scroll-circle">
+                  <p id="text">&#8226; Scroll down &#8226; Scroll down &#8226; Scroll down &#8226; Scroll down &#8226; Scroll down</p>
+                </div>
+              </div>
+        </div>
+        
+          
+    </header>
+    <main>
+        <h2 id="content">Omdat het ook gemakkelijk mag</h2>
+        <p>Als je echt JA durft te zeggen tegen het leven en wie je bent (en 
+            dan ook alles!) dan gaat je leven stromen. Ervaar dat alles 
+            eenvoudiger gaat als jij het leven vol omarmt, je talenten leeft en 
+            met je stroom meegaat. Je zult je verbazen over het gemak en de 
+            overvloed die dan op jouw pad komen. Als je energie voluit kan 
+            stromen dan trek je mensen en situaties aan die op dezelfde 
+            frequentie zitten als jij. En dat is toch fijn!</p>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
+
+  <script>
+    const text = document.getElementById('text')
+    const rotate = new CircleType(text).radius(50)
+
+    window.addEventListener('scroll', function(){
+      text.style.transform = 'rotate(' + (window.scrollY * 0.15) + 'deg)'
+    })
+  </script>
+</body>
+
+</html>
