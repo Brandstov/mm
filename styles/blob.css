@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+body {
+  background-color: black;
+}
+h1 {
+  cursor: none;
+  font-size: 90px;
+  position: relative;
+  z-index: 10;
+}
+.blob {
+  height: 1200px;
+  background-color: white;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  background: linear-gradient(to right, aquamarine, mediumpurple);
+  animation: rotate 4s ease-in-out infinite;
+  /* z-index: -1; */
+}
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    scale: .8 1;
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.blob-mask {
+  cursor: none;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  backdrop-filter:blur(50px) ;
+}

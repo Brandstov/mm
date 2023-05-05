@@ -1,0 +1,12 @@
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  background-color: #1b1b1b;
+  background-size: cover;
+}
+canvas{
+  filter: blur(1px);
+  width: 100vw;
+}

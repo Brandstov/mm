@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F3F5F8;
+    font-family: 'Arial';
+}
+
+header, main {
+    padding: 0 60px;
+}
+
+section {
+    padding-top: 50px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+h1 {
+    padding-top: 100px;
+    max-width: 1200px;
+    margin: auto;
+    font-size: 50px;
+}
+
+h2 {
+    margin-bottom: 16px;
+}
+
+article {
+    width: calc(33% - 18px);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+ul {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+li {
+    list-style: none;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 1300px) {
+    article {
+        width: calc(50% - 16px);
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    h1 {
+        padding-top: 100px;
+        font-size: 30px;
+    }
+    main, header {
+        padding: 0 15px;
+    }
+    section:first-child {
+        padding-top: 20px;
+    }
+    article {
+        width: 100%;
+    }
+}
+
+/* Button 1 */
+.button-container-1 {
+  position: relative;
+  width: 180px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  border: 1px solid;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  border-radius: 8px;
+}
+.button-container-1 button {
+  width: 101%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  background: #000;
+  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  -webkit-mask-size: 2300% 100%;
+  mask-size: 2300% 100%;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  -webkit-animation: ani2 0.7s steps(22) forwards;
+  animation: ani2 0.7s steps(22) forwards;
+}
+.button-container-1 button:hover {
+  -webkit-animation: ani 0.7s steps(22) forwards;
+  animation: ani 0.7s steps(22) forwards;
+}
+
+.mas {
+  position: absolute;
+  color: #000;
+  text-align: center;
+  width: 101%;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  position: absolute;
+  font-size: 11px;
+  margin-top: 17px;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+@-webkit-keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+@-webkit-keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+@keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+
+/* button 2 */
+.button {
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    text-shadow: 0 2.5px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    transition: 0.6s;
+    border: none;
+  }
+  .button span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+  }
+  .button .light {
+    position: relative;
+    width: 50px;
+    height: 150px;
+    background-color: white;
+    transform: skew(-20deg) translate(-250px, -75px);
+  }
+  .button:hover {
+    transform: scale(1.05);
+  }
+  .button:hover .light {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: skew(-20deg) translate(250px, -75px);
+    transition: 1.5s;
+  }
+
+  /* Button 3 */
+.button-3 {
+    --c: black;
+    color: var(--c);
+    font-size: 16px;
+    border: 0.3em solid var(--c);
+    border-radius: 0.2em;
+    background-color: white;
+    width: 12em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.button-3 span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.2s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+.button-3:hover {
+    color: white;
+}
+
+.button-3:hover span {
+    transform: translateY(0) scale(2);
+}
+
+.button-3 span:nth-child(1) {
+    --n: 1;
+}
+
+.button-3 span:nth-child(2) {
+    --n: 2;
+}
+
+.button-3 span:nth-child(3) {
+    --n: 3;
+}
+
+.button-3 span:nth-child(4) {
+    --n: 4;
+}

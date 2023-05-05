@@ -1,0 +1,18 @@
+.circle {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    transition-origin: left top;
+    animation: fade 1s linear;
+    -webkit-box-shadow: 0px 0px 37px 0px rgba(45, 255, 196, 0.72);
+    -moz-box-shadow: 0px 0px 37px 0px rgba(45, 255, 196, 0.72);
+    box-shadow: 0px 0px 37px 0px rgba(45, 255, 196, 0.72);
+    cursor: none;
+}
+
+header {
+    cursor: none;
+}

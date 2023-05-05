@@ -72,9 +72,8 @@ header {
 }
 
 .scroll-container {
-    margin-top: 385px;
     position: relative;
-    left: 650px;
+    top: 185px;
     height: 250vh;
 }
 
