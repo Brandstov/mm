@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <script src="./header1.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/gh/LieutenantPeacock/SmoothScroll@1.2.0/src/smoothscroll.min.js" integrity="sha384-UdJHYJK9eDBy7vML0TvJGlCpvrJhCuOPGTc7tHbA+jHEgCgjWpPbmMvmd/2bzdXU" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -19,16 +20,16 @@
     <header>
         <div class="background-color"></div>
         <nav id="hbNavbar">
-            <img src="../../images/beeldmerk.png" alt="" class="logo">
+            <a href="#"><img src="../../images/beeldmerk.png" alt="" class="logo" width="80"></a>
             <div class="hb-wrapper">
                 <p>Menu</p>
                 <div class="stars-wrapper">
-                    <img src="../../images/stars.png" alt="">
+                    <img src="../../images/stars.svg" alt="" width="15px">
                 </div>
             </div>
         </nav>
         <nav id="fullNavbar">
-            <img src="../../images/logo-with-text.png" alt="" class="logo">
+            <a href="#"><img src="../../images/logo-with-text.png" alt="" class="logo" width="200"></a>
             <ul>
                 <li>Home</li>
                 <li>Aanbod</li>
@@ -37,11 +38,11 @@
                 <li>Contact</li>
             </ul>
         </nav>
-        <h1>Stap in de stroom van je leven ...</h1>
-        <a href="#content" class="scroll-container">
+        <h1>Stap in de stroom <br> van je leven ...</h1>
+        <div onclick="smoothScroll({yPos: 1000, duration: 750});" class="scroll-container">
             <div class="bubble"></div>
             <p>Scroll voor meer</p>
-        </a>
+        </div>
     </header>
     <main id="content">
         <h1 class="hidden">...en ze zal je brengen waar je zijn moet<h1>

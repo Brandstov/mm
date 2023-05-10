@@ -13,14 +13,14 @@ const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
 // Move navbar on scroll
-document.getElementById("hbNavbar").style.transform = "translateY(-400%)";
+document.getElementById("hbNavbar").style.transform = "translateY(-100%)";
 
 window.onscroll = function () { scrollFunction(); };
 
 function scrollFunction() {
     console.log(document.documentElement.scrollTop)
     console.log(window.innerHeight)
-    const breakpoint = window.innerHeight - 140
+    const breakpoint = window.innerHeight - 70
     if (document.body.scrollTop > breakpoint || document.documentElement.scrollTop > breakpoint) {
         document.getElementById("fullNavbar").style.transform = "translateY(-100%)";
         document.getElementById("hbNavbar").style.transform = "translateY(0)";
