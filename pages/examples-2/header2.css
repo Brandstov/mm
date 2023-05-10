@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: white;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 100px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-family: 'Poppins';
+}
+
+ul li {
+    opacity: .4;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+ul li:hover {
+    opacity: 1;
+}
+
+ul li:first-child {
+    opacity: 1;
+}
+
+ul li:first-child::after {
+    content: "";
+    display: block;
+    margin: auto;
+    border-radius: 100%;
+    width: 5px;
+    height: 5px;
+    background: linear-gradient(61.71deg, #E3312D -11.38%, #E95F32 2.66%, #F18F34 24.36%, #FDC800 69.03%, #FDCB03 84.34%, #FDD70E 99.66%, #FEE921 113.7%, #FFEF26 116.25%);
+}
+
+header {
+    position: relative;
+    padding-top: 200px;
+    height: 100vh;
+    background: linear-gradient(50.35deg, rgba(8, 52, 46, .7) 30.14%, rgba(9, 167, 149, .7) 77.9%);
+}
+
+h1 {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 100px;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.scroll-container {
+    position: absolute;
+    left: 50%;
+    bottom: 140px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    transform: transateX(-50%);
+}
+
+.scroll-container p {
+    color: white;
+    font-family: 'Poppins';
+}
+
+.bubble {
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    box-shadow:
+    inset 0 0 25px #fff,
+    inset 10px 0 30px #ee82ee,
+    inset -10px 0 30px #0ff,
+
+    inset 10px 0 150px #ee82ee,
+    inset -10px 0 150px #0ff,
+
+    0 0 3px #fff,
+    -5px 0 30px #ee82ee,
+    5px 0 30px #0ff
+    ;
+    animation: rotate 2s infinite;
+}
+
+/* @keyframes rotate {
+    0% {
+        transform: rotate(0);
+        filter: hue-rotate(0);
+    }
+    50% {
+        filter: hue-rotate(100deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} */
