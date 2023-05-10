@@ -163,6 +163,8 @@ p {
 }
 
 .hb-wrapper {
+    position:relative;
+    z-index: 10;
     display: flex;
     gap: 10px;
     align-items: center;
@@ -239,6 +241,11 @@ p {
   }
   .blob-mobile {
     display: none;
+  }
+
+  .moveHb {
+    transition: all .3s ease-in-out;
+    transform: transateX(0%);
   }
 
   @media only screen and (max-width: 1000px) {
@@ -376,6 +383,7 @@ p {
     }
 
     #mobileNavbar {
+        z-index: 100;
         display: flex;
         padding: 0 15px;
         height: 60px;
@@ -410,5 +418,11 @@ p {
         background: linear-gradient(to right, aquamarine, mediumpurple);
         height: 300px;
         animation: blob 4s ease-in-out infinite;
+      }
+      #hbMenu {
+        transition: all .3s ease-in-out;
+      }
+      .moveHb {
+        transform: translateX(0);
       }
   }

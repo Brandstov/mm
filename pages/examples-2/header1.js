@@ -42,3 +42,8 @@ window.addEventListener('pointermove',(e)=>{
     top:`${clientY}px`
   },{duration:3000, fill:"forwards"})
 })
+
+//hb menu
+function moveMenu() {
+    document.getElementById("hbMenu").classList.toggle('moveHb')
+}
