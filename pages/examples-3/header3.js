@@ -80,4 +80,3 @@ Observer.create({
 });
 
 gotoSection(0, 1);
-console.log('Hello world')
