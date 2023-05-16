@@ -57,37 +57,11 @@ ul li:first-child::after {
     background: linear-gradient(61.71deg, #E3312D -11.38%, #E95F32 2.66%, #F18F34 24.36%, #FDC800 69.03%, #FDCB03 84.34%, #FDD70E 99.66%, #FEE921 113.7%, #FFEF26 116.25%);
 }
 
-.wrapper {
-    padding: 300px 0 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.dissolve {
-    position: fixed;
-    top: 300px;
-    left: 50%;
-    width: 1200px;
-    transform: translateX(-50%);
-}
-
-.reveal {
-    position: fixed;
-    top: 300px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
 header {
     position: relative;
     padding-top: 300px;
     height: 100vh;
-    z-index: 3;
-    overflow: hidden;
+    z-index: 10;
 }
 
 .background-color {
@@ -96,7 +70,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #0F384D;
+    background: linear-gradient(50.35deg, rgba(8, 52, 46, .7) 30.14%, rgba(9, 167, 149, .7) 77.9%);
     z-index: -1;
 }
 
@@ -120,7 +94,6 @@ h1 {
     transform: translateX(-50%);
     text-decoration: none;
     cursor: pointer;
-    transition: all .3s ease-in-out;
 }
 
 .scroll-container p {
@@ -167,8 +140,6 @@ main {
     padding: 100px 0 100px;
     color: #0F384D;
     background-color: #FFFEFB;
-    z-index: 1;
-    overflow: hidden;
 }
 
 section {
@@ -180,6 +151,7 @@ section {
 }
 
 p {
+    font-family: 'Poppins';
     font-size: 19px;
     text-align: left;
     line-height: 30px;
@@ -189,7 +161,6 @@ p {
     font-family: 'Poppins';
     color: #0F384D;
     transform: transateY(-400%);
-    z-index: 10;
 }
 
 .hb-wrapper {
@@ -266,6 +237,7 @@ p {
     top: 0;
     height: 100%;
     width: 100%;
+    z-index: 2;
     backdrop-filter:blur(50px) ;
   }
   .blob-mobile {
@@ -275,6 +247,19 @@ p {
   .moveHb {
     transition: all .3s ease-in-out;
     transform: transateX(0%);
+  }
+
+  #appear {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 1s cubic-bezier(0,.77,.28,1.02);;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #0F384D;
+    background-color: #FFFEFB;
   }
 
   @media only screen and (max-width: 1000px) {
